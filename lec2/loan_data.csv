@@ -1,0 +1,9 @@
+Name,Age,Income,Education,Gender,Loan_Status
+Alice,25,50000.0,B.Tech,Female,Approved
+Bob,30,60000.0,M.Tech,Male,Approved
+Charlie,35,,PhD,Male,Rejected
+Diana,40,80000.0,B.Tech,Female,Approved
+Edward,45,75000.0,,Male,Rejected
+Fiona,22,,M.Tech,Female,Approved
+George,55,90000.0,PhD,Male,Rejected
+Elon Musk,51,10000000.0,PhD,Male,Approved
