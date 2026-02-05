@@ -1,0 +1,15 @@
+# Root-level requirements summary
+# This file lists all Python dependencies across the project
+# Install dependencies in each subdirectory separately
+
+# ML Model Dependencies (install in ml_model/)
+# See ml_model/requirements.txt
+
+# Backend Dependencies (install in backend/)
+# See backend/requirements.txt
+
+# Note: Frontend uses npm, see frontend/package.json
+
+# To install all Python dependencies:
+# 1. cd ml_model && pip install -r requirements.txt
+# 2. cd ../backend && pip install -r requirements.txt

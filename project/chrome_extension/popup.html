@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Posting Analyzer</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 Job Posting Analyzer</h1>
+            <p class="subtitle">AI-Powered Fake Job Detection</p>
+        </header>
+
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Analyzing job posting...</p>
+        </div>
+
+        <div id="error" class="error hidden">
+            <p id="error-message"></p>
+        </div>
+
+        <div id="results" class="results hidden">
+            <div class="prediction-card">
+                <div id="prediction-badge" class="prediction-badge">
+                    <span id="prediction-text"></span>
+                </div>
+                <div class="confidence-score">
+                    <span id="confidence-value"></span>
+                    <span id="confidence-label"></span>
+                </div>
+            </div>
+
+            <div class="reasons-section">
+                <h3>Key Reasons:</h3>
+                <ul id="reasons-list"></ul>
+            </div>
+
+            <div class="job-info">
+                <h3>Analyzed Job:</h3>
+                <p><strong>Title:</strong> <span id="job-title"></span></p>
+                <p><strong>Company:</strong> <span id="company-name"></span></p>
+            </div>
+        </div>
+
+        <div id="no-data" class="no-data">
+            <p>⚠️ No job posting detected on this page.</p>
+            <p class="hint">Navigate to a job posting page on LinkedIn, Indeed, or Naukri to analyze it.</p>
+        </div>
+
+        <div class="actions">
+            <button id="analyze-btn" class="btn-primary">Analyze Job Posting</button>
+            <button id="refresh-btn" class="btn-secondary">Refresh Data</button>
+        </div>
+
+        <footer>
+            <p class="disclaimer">⚠️ Predictions are AI-based and not legal verdicts. Always verify job postings independently.</p>
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

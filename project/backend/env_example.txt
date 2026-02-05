@@ -1,0 +1,8 @@
+# MongoDB Configuration
+MONGO_URI=mongodb://localhost:27017/
+# For MongoDB Atlas, use: mongodb+srv://username:password@cluster.mongodb.net/
+DATABASE_NAME=job_analysis_db
+
+# API Configuration
+API_HOST=0.0.0.0
+API_PORT=8000
